@@ -1,9 +1,8 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar' 
 import ItemListContainer from './components/ItemListContainer'
+import Cards from './components/Cards'
 
 
 function App() {
@@ -13,6 +12,7 @@ function App() {
     <div>
       <Navbar/>
       <ItemListContainer greeting='Holis Perris'/>
+      <Cards text='descripcion imagen'/>
     </div>
   )
 }
