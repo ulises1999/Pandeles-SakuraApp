@@ -12,7 +12,11 @@ function App() {
     <div>
       <Navbar/>
       <ItemListContainer greeting='Holis Perris'/>
-      <Cards text='descripcion imagen'/>
+      <div className='cardsGalery'>
+        <Cards imagen='' text='descripcion imagen'/>
+        <Cards imagen='' text='descripcion imagen'/>
+        <Cards imagen='' text='descripcion imagen'/>
+      </div>
     </div>
   )
 }

@@ -24,3 +24,27 @@
  .cartCounter{
     color: red;
  }
+ .cardContainer{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   border-radius: 3% 0%;
+ }
+ .imagenCard{
+   width: auto;
+   border: solid 1px black;
+   &:hover{
+      transform: scale(0.1);
+   }
+ }
+ .textoCard{
+   font-size: 500;
+ }
+ .cardsGalery{
+   display: flex;
+   justify-content: space-evenly;
+   padding: auto;
+   border-radius: 3% 0%;
+   border: solid 1px black;
+ }

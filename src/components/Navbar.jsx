@@ -2,10 +2,10 @@ import CartWidget from "./CartWidget"
 const Navbar= () => {
     return(
         <nav className="navContainer">
-            <a className="aLink">Sakura</a>
-            <a className="aLink">Nuevos Ingresos</a>
-            <a className="aLink">Ofertas</a>
-            <a className="aLink">Mas Vendidos</a>
+            <a href="./App" className="aLink">Sakura</a>
+            <a href="./App" className="aLink">Nuevos Ingresos</a>
+            <a href="./App" className="aLink">Ofertas</a>
+            <a href="./App" className="aLink">Mas Vendidos</a>
             <CartWidget counter={15}/>
         </nav>
     )
