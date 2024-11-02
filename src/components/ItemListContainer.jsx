@@ -1,4 +1,5 @@
 import Cards from '../components/Cards'
+import Carousel from './Carousel'
 const ItemListContainer= ({greeting}) =>{
     return(
         <>
@@ -21,6 +22,7 @@ const ItemListContainer= ({greeting}) =>{
                 <Cards tittle='titulo naranja' src='public\images\naranja.jpg' text='descripcion imagen naranja'/>
                 <Cards tittle='titulo azul' src='public\images\azuk.jpg' text='descripcion imagen azul'/>
             </section>
+            <Carousel/>
         </>
     )
 }

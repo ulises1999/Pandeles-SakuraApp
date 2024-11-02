@@ -60,3 +60,54 @@
   margin-left: 100px;
   color: rebeccapurple;
  }
+ .logoNav{
+   height: 100px;
+ }
+ #carouselExampleIndicators {
+   width: 100%;
+ }
+ #carouselExampleIndicators .carousel-indicators {
+   transform: translate(0px, 13px);
+ }
+ #carouselExampleIndicators .carousel-inner {
+   width: 100%;
+   background-color: rgba(207, 118, 200, 0.65);
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item div {
+   display: flex;
+   justify-content: space-around;
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item div .precio {
+   background-color: black;
+   font-style: inherit;
+   color: white;
+   border-radius: 50%;
+   max-height: 50%;
+   margin: 0px;
+   display: inline;
+   align-self: start;
+   padding: 8px;
+   transform: translate(-60px, 10px) rotate(16deg);
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item div .logoSlider {
+   max-height: 150px;
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item div .textoSlider {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: space-around;
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item .azul {
+   background: linear-gradient(to right, rgb(49, 112, 133), black);
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item .verde {
+   background: linear-gradient(to right, rgb(63, 119, 48), black);
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item .naranja {
+   background: linear-gradient(to right, rgb(248, 142, 3), black);
+ }
+ #carouselExampleIndicators .carousel-inner .carousel-item img {
+   max-height: 150px;
+   width: auto;
+ }
