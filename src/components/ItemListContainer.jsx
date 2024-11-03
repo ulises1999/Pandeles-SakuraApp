@@ -1,6 +1,10 @@
 import Cards from '../components/Cards'
 import Carousel from './Carousel'
+import ItemCount from '../components/itemCount'
 const ItemListContainer= ({greeting}) =>{
+    const onAdd=(cantidad)=>{
+        alert(`Agreaste ${cantidad} al carrito`)
+    }
     return(
         <>
             <h1 className="greeting">{greeting}</h1>
@@ -23,6 +27,7 @@ const ItemListContainer= ({greeting}) =>{
                 <Cards tittle='titulo azul' src='public\images\azuk.jpg' text='descripcion imagen azul'/>
             </section>
             <Carousel/>
+            <ItemCount stock={15} onAdd={onAdd} />
         </>
     )
 }
