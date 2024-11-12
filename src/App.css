@@ -56,10 +56,6 @@
  .card-image{
   border-bottom: solid 2px black;
  }
- .subtittle{
-  margin-left: 100px;
-  color: rebeccapurple;
- }
  .logoNav{
    height: 100px;
  }
@@ -110,4 +106,16 @@
  #carouselExampleIndicators .carousel-inner .carousel-item img {
    max-height: 150px;
    width: auto;
+ }
+ #card-reveal{
+  background-color: rgba(116, 87, 47, 0.8);
+ }
+ #card-reveal span{
+  color: aliceblue;
+  font-size: 50px;
+  font-style: dark0;
+ }
+ #card-reveal p{
+  font-size: large;
+  color: white;
  }
