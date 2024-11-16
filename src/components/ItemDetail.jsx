@@ -6,7 +6,7 @@ const ItemDetail = ({producto}) => {
     const onAdd=(cantidad)=>{
         if (cantidad < producto.stock ){
             alert(`Tu carrito esta vacio`)
-        }else{
+        }else {
             alert(`Agregaste ${cantidad} al carrito `)
         }
     }

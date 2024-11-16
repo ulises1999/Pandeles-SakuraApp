@@ -22,7 +22,7 @@ const ItemCount =({stock,onAdd})=>{
             <span>{count}</span>
             <button onClick={sumar} className="buttonSumar">+</button>
         </div>
-        <button onClick={onAddHandler}>comprar</button>
+        <button className="buttonComprar" onClick={onAddHandler}>comprar</button>
         </div>
     )
 }
