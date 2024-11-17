@@ -1,80 +1,80 @@
 const productos =[    
-    {   id: 1, 
+    {   id: '1', 
         nombre: "Producto 1",
         descripcion: "Descripción del producto 1", 
         img:"", 
-        categoria:"", 
-        stock:1, 
+        categoria:"cocina", 
+        stock:13, 
         precio:""
         },
 
-    {   id: 2, 
+    {   id: '2', 
         nombre: "Producto 2", 
         descripcion: "Descripción del producto 2", 
         img:"", 
-        categoria:"", 
+        categoria:"cocina", 
         stock:2, 
         precio:""
     },
 
-    {   id: 3, 
+    {   id: '3', 
         nombre: "Producto 3",
         descripcion: "Descripcion del producto 3", 
         img:"", 
-        categoria:"", 
-        stock:3, 
+        categoria:"cocina", 
+        stock:9, 
         precio:""
     },
 
-    {   id: 4, 
+    {   id: '4', 
         nombre: "Producto 4", 
         descripcion: "Descripcion del producto 4", 
         img:"", 
-        categoria:"", 
-        stock:4, 
+        categoria:"habitacion", 
+        stock:16, 
         precio:""
     },
 
-    {   id: 5, 
+    {   id: '5', 
         nombre: "Producto 5", 
         descripcion: "Descripcion del producto 5", 
         img:"", 
-        categoria:"", 
-        stock:5, 
+        categoria:"habitacion", 
+        stock:0, 
         precio:""
     },
 
-    {   id: 6, 
+    {   id: '6', 
         nombre: "Producto 6", 
         descripcion: "Descripcion del producto 6", 
         img:"", 
-        categoria:"", 
-        stock:6, 
+        categoria:"habitacion", 
+        stock:25, 
         precio:""
     },
     
-    {   id: 7, 
+    {   id: '7', 
         nombre: "Producto 7", 
         descripcion: "Descripcion del producto 7", 
         img:"", 
-        categoria:"", 
-        stock:7, 
+        categoria:"living", 
+        stock:18, 
         precio:""
     },
-    {   id: 8, 
+    {   id: '8', 
         nombre: "Producto 8", 
         descripcion: "Descripcion del producto 8", 
         img:"", 
-        categoria:"", 
-        stock:8, 
+        categoria:"living", 
+        stock:12, 
         precio:""
     },
-    {   id: 9, 
+    {   id: '9', 
         nombre: "Producto 9", 
         descripcion: "Descripcion del producto 9", 
         img:"", 
-        categoria:"", 
-        stock:9, 
+        categoria:"living", 
+        stock:4, 
         precio:""
     }
 ]
@@ -98,7 +98,7 @@ export const getOneProducto = (id)=>{
     return new Promise((resolve, reject)=>{
         setTimeout(()=>{
             if(!error){
-                let producto = productos.find((item)=> item.id === String(id))
+                let producto = productos.find((item)=> item.id === id)
                 resolve(producto)
             }else{
                 reject("No hay data")

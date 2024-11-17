@@ -1,24 +1,31 @@
 import React, {useState,useEffect} from 'react'
 import ItemList from './ItemList'
 import { getProductos } from '../mock/Data'
+import {useParams} from 'react-router-dom'
 
 const ItemListContainer= ({greeting}) =>{
     const [productos,setProductos]= useState([])
     const [loading,setLoading] = useState (false)
+    const {category}= useParams()
 
     useEffect(()=>{
         setLoading(true)
         getProductos()
-        .then((res)=>setProductos(res))
+        .then((res)=>{
+            if(category){
+                setProductos(res.filter((prod)=>prod.categoria === category))
+            } else {
+                setProductos(res)
+            }
+        })
         .catch((error)=>console.log(error))
         .finally(()=>setLoading(false))
-    },[])
+    },[category])
     
     return(
         <>
-            <h1 className="greeting">{greeting}</h1>
-            {loading ? <span>Cargando..</span> :  <ItemList productos={productos}/>}
-        
+        <h1 className="greeting">{greeting}</h1>
+        {loading ? <span>Cargando..</span> :  <ItemList productos={productos}/>}
         </>
     )
 }
