@@ -3,7 +3,7 @@ const productos =[
         nombre: "Producto 1",
         descripcion: "Descripción del producto 1", 
         img:"", 
-        categoria:"cocina", 
+        category:"cocina", 
         stock:13, 
         precio:""
         },
@@ -12,7 +12,7 @@ const productos =[
         nombre: "Producto 2", 
         descripcion: "Descripción del producto 2", 
         img:"", 
-        categoria:"cocina", 
+        category:"cocina", 
         stock:2, 
         precio:""
     },
@@ -21,7 +21,7 @@ const productos =[
         nombre: "Producto 3",
         descripcion: "Descripcion del producto 3", 
         img:"", 
-        categoria:"cocina", 
+        category:"cocina", 
         stock:9, 
         precio:""
     },
@@ -30,7 +30,7 @@ const productos =[
         nombre: "Producto 4", 
         descripcion: "Descripcion del producto 4", 
         img:"", 
-        categoria:"habitacion", 
+        category:"habitacion", 
         stock:16, 
         precio:""
     },
@@ -39,7 +39,7 @@ const productos =[
         nombre: "Producto 5", 
         descripcion: "Descripcion del producto 5", 
         img:"", 
-        categoria:"habitacion", 
+        category:"habitacion", 
         stock:0, 
         precio:""
     },
@@ -48,7 +48,7 @@ const productos =[
         nombre: "Producto 6", 
         descripcion: "Descripcion del producto 6", 
         img:"", 
-        categoria:"habitacion", 
+        category:"habitacion", 
         stock:25, 
         precio:""
     },
@@ -57,7 +57,7 @@ const productos =[
         nombre: "Producto 7", 
         descripcion: "Descripcion del producto 7", 
         img:"", 
-        categoria:"living", 
+        category:"living", 
         stock:18, 
         precio:""
     },
@@ -65,7 +65,7 @@ const productos =[
         nombre: "Producto 8", 
         descripcion: "Descripcion del producto 8", 
         img:"", 
-        categoria:"living", 
+        category:"living", 
         stock:12, 
         precio:""
     },
@@ -73,7 +73,7 @@ const productos =[
         nombre: "Producto 9", 
         descripcion: "Descripcion del producto 9", 
         img:"", 
-        categoria:"living", 
+        category:"living", 
         stock:4, 
         precio:""
     }
@@ -89,7 +89,7 @@ export const getProductos = () =>{
             }else{
                 resolve(productos)
             }
-        },3000)
+        },2000)
     })
 }
 
@@ -103,6 +103,6 @@ export const getOneProducto = (id)=>{
             }else{
                 reject("No hay data")
             }
-        },3000)
+        },2000)
     })
 }

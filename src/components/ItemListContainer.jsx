@@ -13,7 +13,7 @@ const ItemListContainer= ({greeting}) =>{
         getProductos()
         .then((res)=>{
             if(category){
-                setProductos(res.filter((prod)=>prod.categoria === category))
+                setProductos(res.filter((prod)=>prod.category === category))
             } else {
                 setProductos(res)
             }
@@ -24,7 +24,7 @@ const ItemListContainer= ({greeting}) =>{
     
     return(
         <>
-        <h1 className="greeting">{greeting}</h1>
+        <h1 className="greeting">{greeting}{category}</h1>
         {loading ? <span>Cargando..</span> :  <ItemList productos={productos}/>}
         </>
     )

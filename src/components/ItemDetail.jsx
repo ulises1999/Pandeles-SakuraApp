@@ -3,14 +3,15 @@ import ItemCount from './ItemCount'
 
 const ItemDetail = ({producto}) => {
     
-    const onAdd=(cantidad)=>{
-        if (cantidad < producto.stock ){
+    const onAdd=(count)=>{
+        if (count <= 0 ){
             alert(`Tu carrito esta vacio`)
         }else {
-            alert(`Agregaste ${cantidad} al carrito `)
+            alert(`Agregaste ${count} al carrito `)
         }
     }
-    
+    {console.log(producto)
+    }
   return (
     <div>
         <h1>Detalle del producto:{producto.nombre}</h1>
