@@ -1,81 +1,81 @@
 const productos =[    
     {   id: '1', 
-        nombre: "Producto 1",
+        nombre: "Vajilla vintage",
         descripcion: "Descripción del producto 1", 
-        img:"", 
-        category:"cocina", 
+        img:"../public/images/vajillaCocina.jpg", 
+        category:"Cocina", 
         stock:13, 
-        precio:""
+        precio:"200.000"
         },
 
     {   id: '2', 
-        nombre: "Producto 2", 
+        nombre: "Cajon separador", 
         descripcion: "Descripción del producto 2", 
-        img:"", 
-        category:"cocina", 
+        img:"../public/images/cajonCocina.jpg", 
+        category:"Cocina", 
         stock:2, 
-        precio:""
+        precio:"150.000"
     },
 
     {   id: '3', 
-        nombre: "Producto 3",
+        nombre: "Especieros",
         descripcion: "Descripcion del producto 3", 
-        img:"", 
-        category:"cocina", 
+        img:"../public/images/especieros.jpg", 
+        category:"Cocina", 
         stock:9, 
-        precio:""
+        precio:"60.000"
     },
 
     {   id: '4', 
-        nombre: "Producto 4", 
+        nombre: "Mesa de Living", 
         descripcion: "Descripcion del producto 4", 
-        img:"", 
-        category:"habitacion", 
+        img:"../public/images/mesaLiving.jpg", 
+        category:"Living", 
         stock:16, 
-        precio:""
+        precio:"600.000"
     },
 
     {   id: '5', 
-        nombre: "Producto 5", 
+        nombre: "Sillon", 
         descripcion: "Descripcion del producto 5", 
-        img:"", 
-        category:"habitacion", 
+        img:"../public/images/sillonliving.jpg", 
+        category:"Living", 
         stock:0, 
-        precio:""
+        precio:"950.000"
     },
 
     {   id: '6', 
-        nombre: "Producto 6", 
+        nombre: "Alfombra para Living", 
         descripcion: "Descripcion del producto 6", 
-        img:"", 
-        category:"habitacion", 
+        img:"../public/images/alfombraLiving.jpg", 
+        category:"Living", 
         stock:25, 
-        precio:""
+        precio:"235.000"
     },
     
     {   id: '7', 
-        nombre: "Producto 7", 
+        nombre: "Lavamanos negro", 
         descripcion: "Descripcion del producto 7", 
-        img:"", 
-        category:"living", 
+        img:"../public/images/baño1.jpg", 
+        category:"Baño", 
         stock:18, 
-        precio:""
+        precio:"1.300.000"
     },
     {   id: '8', 
-        nombre: "Producto 8", 
+        nombre: "Lavamanos", 
         descripcion: "Descripcion del producto 8", 
-        img:"", 
-        category:"living", 
+        img:"../public/images/baño2.jpg", 
+        category:"Baño", 
         stock:12, 
-        precio:""
+        precio:"1.100.000"
     },
     {   id: '9', 
-        nombre: "Producto 9", 
+        nombre: "Lavamanos blanco", 
         descripcion: "Descripcion del producto 9", 
-        img:"", 
-        category:"living", 
+        img:"../public/images/baño3.jpg", 
+        category:"Baño", 
         stock:4, 
-        precio:""
+        precio:"1.200.000"
     }
 ]
  

@@ -13,7 +13,7 @@ const ItemDetail = ({producto}) => {
     {console.log(producto)
     }
   return (
-    <div>
+    <div className='detalleProducto'>
         <h1>Detalle del producto:{producto.nombre}</h1>
         <img src={producto.img} alt={producto.img}/>
         <p>{producto.descripcion}</p>
