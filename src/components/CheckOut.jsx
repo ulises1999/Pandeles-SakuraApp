@@ -26,10 +26,10 @@ const Checkout = () => {
     }else{
         //objeto de la orden
         let order = {
-            buyer: user,
+            comprador: user,
             carrito:cart,
             total:cartTotal(),
-            date: serverTimestamp()
+            Date: serverTimestamp()
         }
         //traer nuestra coleccion
         const ventas = collection(db, "orders")
