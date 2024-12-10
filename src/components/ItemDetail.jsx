@@ -1,10 +1,10 @@
-import React, {useContext, useState} from 'react'
+import React, { useState} from 'react'
 import ItemCount from './ItemCount'
-import { CartContext } from '../context/cartContext'
+import { useCart} from '../context/CartContext'
 
 const ItemDetail = ({producto}) => {
-    const [compra,setCompra]=useState (false)
-    const [addToCart]=useContext(CartContext)
+    const [compra,setCompra] = useState (false)
+    const [addToCart] = useCart()
     const onAdd=(count)=>{
         if (count <= 0 ){
             alert(`Tu carrito esta vacio`)

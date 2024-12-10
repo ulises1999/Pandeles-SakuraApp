@@ -32,14 +32,14 @@ const ItemListContainer= ({greeting}) =>{
         .finally(()=>setLoading(false))
     },[category])
 
-    // const addData = () => {
-    //     const collectionToAdd = collection(db,"productos");
-    //     productosDB.map((item)=>addDoc(collectionToAdd,item))
-    // }
+    //  const addData = () => {
+    //      const collectionToAdd = collection(db,"productos");
+    //      productosDB.map((item)=>addDoc(collectionToAdd,item))
+    //  }
     
     return(
         <>
-        {/* <button onClick={addData} >Agregar a firebase</button> */}
+        {/* { <button onClick={addData} >Agregar a firebase</button> } */}
         <h1 className="greeting">{greeting}{category}</h1>
         {loading ? <Loader/> :  <ItemList productos={productos}/>}
         </>
