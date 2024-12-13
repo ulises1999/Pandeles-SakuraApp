@@ -2,7 +2,7 @@ export const productosDB =[
     {   
         nombre: "Cajon separador", 
         descripcion: "Descripción del producto 2", 
-        img:"../public/images/cajonCocina.jpg", 
+        img:'/cajonCocina.jpg', 
         category:"Cocina", 
         stock:2, 
         precio:"150.000"
@@ -11,7 +11,7 @@ export const productosDB =[
     {  
         nombre: "Especieros",
         descripcion: "Descripcion del producto 3", 
-        img:"../public/images/especieros.jpg", 
+        img:'/especieros.jpg', 
         category:"Cocina", 
         stock:9, 
         precio:"60.000"
@@ -20,7 +20,7 @@ export const productosDB =[
     {   
         nombre: "Mesa de Living", 
         descripcion: "Descripcion del producto 4", 
-        img:"../public/images/mesaLiving.jpg", 
+        img:'/mesaLiving.jpg', 
         category:"Living", 
         stock:16, 
         precio:"600.000"
@@ -29,7 +29,7 @@ export const productosDB =[
     { 
         nombre: "Sillon", 
         descripcion: "Descripcion del producto 5", 
-        img:"../public/images/sillonliving.jpg", 
+        img:'/sillonliving.jpg', 
         category:"Living", 
         stock:0, 
         precio:"950.000"
@@ -38,7 +38,7 @@ export const productosDB =[
     {   
         nombre: "Alfombra para Living", 
         descripcion: "Descripcion del producto 6", 
-        img:"../public/images/alfombraLiving.jpg", 
+        img:'/alfombraLiving.jpg', 
         category:"Living", 
         stock:25, 
         precio:"235.000"
@@ -47,7 +47,7 @@ export const productosDB =[
     {  
         nombre: "Lavamanos negro", 
         descripcion: "Descripcion del producto 7", 
-        img:"../public/images/baño1.jpg", 
+        img:'/baño1.jpg', 
         category:"Baño", 
         stock:18, 
         precio:"1.300.000"
@@ -55,7 +55,7 @@ export const productosDB =[
     {  
         nombre: "Lavamanos", 
         descripcion: "Descripcion del producto 8", 
-        img:"../public/images/baño2.jpg", 
+        img:'/baño2.jpg', 
         category:"Baño", 
         stock:12, 
         precio:"1.100.000"
@@ -63,7 +63,7 @@ export const productosDB =[
     {  
         nombre: "Lavamanos blanco", 
         descripcion: "Descripcion del producto 9", 
-        img:"../public/images/baño3.jpg", 
+        img:'/baño3.jpg', 
         category:"Baño", 
         stock:4, 
         precio:"1.200.000"
