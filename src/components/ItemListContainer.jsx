@@ -1,6 +1,5 @@
 import React, {useState,useEffect} from 'react'
 import ItemList from './ItemList'
-// import { productosDB } from '../mock/Data'
 import {useParams} from 'react-router-dom'
 import Loader from './Loader'
 import { addDoc, collection, getDocs,query,where } from 'firebase/firestore'
@@ -32,16 +31,10 @@ const ItemListContainer= ({greeting}) =>{
         .finally(()=>setLoading(false))
     },[category])
 
-    //  const addData = () => {
-    //      const collectionToAdd = collection(db,"productos");
-    //      productosDB.map((item)=>addDoc(collectionToAdd,item))
-    //  }
-    
     return(
         <>
-        {/* { <button onClick={addData} >Agregar a firebase</button> } */}
-        <h1 className="greeting">{greeting}{category}</h1>
-        {loading ? <Loader/> :  <ItemList productos={productos}/>}
+            <h1 className="greeting">{greeting}{category}</h1>
+            {loading ? <Loader/> :  <ItemList productos={productos}/>}
         </>
     )
 }

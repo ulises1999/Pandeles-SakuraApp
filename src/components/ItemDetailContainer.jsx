@@ -1,34 +1,41 @@
 import React,{ useEffect,useState } from "react"
-// import {getOneProducto } from "../mock/Data"
 import ItemDetail from './ItemDetail'
-import {useParams} from 'react-router-dom'
+import {useParams, Link} from 'react-router-dom'
 import Loader from "./Loader"
 import {collection,getDoc,doc} from 'firebase/firestore'
+import { db } from "../services/firebase"
 
 const ItemDetailContainer = ({greeting})=>{
     const[producto,setProducto]= useState({})
+    const [invalidItem, setInvalidItem]= useState(false)
     const [loading,setLoading] = useState (false)
     const {id}= useParams()
-    console.log(useParams())
 
     useEffect(()=>{
         setLoading(true)
         const collectionProd = collection(db,"productos");
         const docRef= doc(collectionProd, id)
+
         getDoc(docRef)
-        .then((res)=>setProducto({id: res.id, ...res.data()}))
+        .then((res)=> {
+            if(res.data()){
+              setProducto({id: res.id, ...res.data()})
+            }else{
+              setInvalidItem(true)
+            }
+          })
         .catch((error)=>console.log(error))
         .finally(()=>setLoading(false))
-    },[])
-    // useEffect (()=>{
-    //     setLoading(true)
-    //     getOneProducto(id)
-    //     .then((res)=> setProducto(res))
-    //     .catch((error)=>console.log(error))
-    //     .finally(()=> setLoading(false))
-    //   },[])
 
-    
+    },[id])
+
+    if(invalidItem){
+        return <div>
+          <h3>El producto no existe!</h3>
+          <Link to='/' className='btn btn-dark'> Volver a home</Link>
+        </div>
+      }
+  
     return (
         <div>
             <h1>{greeting}</h1>

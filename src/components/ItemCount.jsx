@@ -1,29 +1,29 @@
 import React,{ useState } from "react"
 
-const ItemCount =({stock,onAdd})=>{
-    const [count,setCount]=useState(0)
+const Itemcantidad =({stock,onAdd})=>{
+    const [cantidad,setcantidad]=useState(0)
     const sumar = ()=>{
-        if(count < stock){
-        setCount(count + 1)
+        if(cantidad < stock){
+        setcantidad(cantidad + 1)
         }
     }
     const restar = ()=>{
-        if (count > 0){
-        setCount(count - 1)
+        if (cantidad > 0){
+        setcantidad(cantidad - 1)
         }
     }
     const onAddHandler =() => {
-        onAdd(count)
+        onAdd(cantidad)
     }
     return(
         <div>
         <div>
             <button onClick={restar} className="buttonRestar">-</button>
-            <span>{count}</span>
+            <span>{cantidad}</span>
             <button onClick={sumar} className="buttonSumar">+</button>
         </div>
         <button className="buttonComprar" onClick={onAddHandler}>comprar</button>
         </div>
     )
 }
-export default ItemCount
+export default Itemcantidad

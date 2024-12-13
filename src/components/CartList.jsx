@@ -1,5 +1,5 @@
 import React from 'react'
-import { useCart } from './context/CartContext'
+import { useCart } from '../context/CartContext'
 import CartItem from './CartItem'
 import { Link } from 'react-router-dom'
 
@@ -8,7 +8,7 @@ const CartList = () => {
   return (
     <div>
         {cart.map((prod)=> <CartItem key={prod.id} prod={prod}/>)}
-        <span>Total a pagar: ${cartTotal()}</span>
+        <span>Total a pagar: ${cartTotal()},00</span>
         <div  style={{
               display: 'flex',
               justifyContent: 'space-between',
