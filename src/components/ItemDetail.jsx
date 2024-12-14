@@ -16,19 +16,21 @@ const ItemDetail = ({producto}) => {
     }
     
   return (
-    <div className='detalleProducto'>
-        <h1>Detalle del producto:{producto.nombre}</h1>
-        <img src={producto.img} alt={producto.img}/>
-        <p>{producto.descripcion}</p>
-        <p>${producto.precio}</p>
-        {compra ?
-        
-        <div>
-            <Link to= '/'>Seguir comprando</Link> 
-            <Link to= '/cart'>Ir al carrito</Link>
-        </div> 
-        
-        : <ItemCount stock={producto.stock} onAdd={onAdd}/>}
+    <div className='detalleContenedor'>
+        <div className='detalleProducto'>
+            <h1>Detalle del producto:{producto.nombre}</h1>
+            <img src={producto.img} alt={producto.img}/>
+            <p>{producto.descripcion}</p>
+            <p>${producto.precio}</p>
+            {compra ?
+            
+            <div>
+                <Link to= '/'>Seguir comprando</Link> 
+                <Link to= '/cart'>Ir al carrito</Link>
+            </div> 
+            
+            : <ItemCount stock={producto.stock} onAdd={onAdd}/>}
+        </div>
     </div>
   )
 }
