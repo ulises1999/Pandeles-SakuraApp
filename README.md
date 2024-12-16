@@ -20,7 +20,7 @@ npm install
 npm run dev
 
 ## Versión HOST 💻
-Si deseas ver el proyecto online, puedes ingresar al siguiente enlace: **[Sakura Bazar](URL_DEL_PROYECTO_HOSTEADO)**
+Si deseas ver el proyecto online, puedes ingresar al siguiente enlace: **[Sakura Bazar](https://pandeles-sakura-app.vercel.app)**
 
 ## Librerías utilizadas 📚
 - **Bootstrap**: Utilizada para parte del diseño visual.

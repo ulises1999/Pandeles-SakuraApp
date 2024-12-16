@@ -16,11 +16,11 @@ const Itemcantidad =({stock,onAdd})=>{
         onAdd(cantidad)
     }
     return(
-        <div>
-        <div>
-            <button onClick={restar} className="buttonRestar">-</button>
+        <div className="counterCardContainer">
+        <div className="counterCard">
+            <button onClick={restar} className="buttonRestar btn btn-danger">-</button>
             <span>{cantidad}</span>
-            <button onClick={sumar} className="buttonSumar">+</button>
+            <button onClick={sumar} className="buttonSumar btn btn-success">+</button>
         </div>
         <button className="buttonComprar" onClick={onAddHandler}>comprar</button>
         </div>

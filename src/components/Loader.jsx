@@ -1,9 +1,16 @@
 import React from 'react'
+import {ClipLoader} from "react-spinners";
 
 const Loader = () => {
   return (
-    <div>
-      <span>Cargando..</span>
+    <div style={{
+      width:'100%',
+      height:'90vh',
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center'
+  }}>
+      <ClipLoader />
     </div>
   )
 }
