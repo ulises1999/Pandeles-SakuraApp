@@ -8,8 +8,6 @@ El proyecto incluye funcionalidades como:
 - **Formulario de confirmación** de compra.
 - Integración con **Firebase** para gestionar la base de datos, incluyendo control de stock y almacenamiento de datos del cliente.
 
-## Captura de pantalla 📸
-![Captura del proyecto](ruta_a_la_imagen)
 
 ## Instalación ⚙️
 
