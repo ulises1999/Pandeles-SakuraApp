@@ -160,6 +160,15 @@
   width: 40%;
 }
 
+.formularioCompra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  width: 100vh;
+  justify-self: center;
+}
+
 @media (max-width: 768px) {
   .footer {
     text-align: left;
