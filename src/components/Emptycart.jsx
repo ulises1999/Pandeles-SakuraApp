@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Emptycart = () => {
   return (
-    <div>
+    <div className='emptyCartMain'>
       <h2>Tu carrito esta vacio</h2>
-      <Link className='btn' to='/'> ir a comprar</Link>
+      <Link className='btn btn-compra-emptycart' to='/'> ir a comprar</Link>
     </div>
   )
 }

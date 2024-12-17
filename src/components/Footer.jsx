@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="footerContainer">
     <footer className="footer">
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Sakura Bazar. Todos los derechos reservados.</p>
+        <p className="pSinMargin">&copy; {new Date().getFullYear()} Sakura Bazar. Todos los derechos reservados.</p>
       </div>
     </footer>
     </div>
